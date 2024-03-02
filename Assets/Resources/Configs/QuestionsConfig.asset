@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986e980d614b27f4388a181e09979277, type: 3}
   m_Name: QuestionsConfig
   m_EditorClassIdentifier: 
+  StartRoundDelay: 5
+  RoundTimer: 5
+  RandomRangeMin: 23
+  RandomRangeMax: 88
   Questions:
   - BlueQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 1"
-    BlueQuestionSpritePath: 1
+    BlueQuestionSprite: {fileID: 21300000, guid: c58a96c1e06de6e4e87664d0d3e0a623, type: 3}
     RedQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 2"
-    RedQuestionSpritePath: 1.1
+    RedQuestionSprite: {fileID: 21300000, guid: e8ae0388cc58c5042a0096a2261f2def, type: 3}
   - BlueQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 2"
-    BlueQuestionSpritePath: 2
+    BlueQuestionSprite: {fileID: 21300000, guid: e8ae0388cc58c5042a0096a2261f2def, type: 3}
     RedQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 1"
-    RedQuestionSpritePath: 2.1
+    RedQuestionSprite: {fileID: 21300000, guid: c58a96c1e06de6e4e87664d0d3e0a623, type: 3}
