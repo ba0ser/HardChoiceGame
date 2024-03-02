@@ -12,20 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986e980d614b27f4388a181e09979277, type: 3}
   m_Name: QuestionsConfig
   m_EditorClassIdentifier: 
-  StartRoundDelay: 3
-  RoundTimer: 10
-  RandomRangeMin: 20
-  RandomRangeMax: 70
   Questions:
-  - BlueQuestionText: "\u0421\u043F\u0430\u0441\u0442\u0438 \u0436\u0438\u0437\u043D\u044C
-      \u043A\u043E\u0448\u043A\u0435"
-    BlueQuestionSprite: {fileID: 21300000, guid: c58a96c1e06de6e4e87664d0d3e0a623, type: 3}
-    RedQuestionText: "\u0421\u043F\u0430\u0441\u0442\u0438 \u0436\u0438\u0437\u043D\u044C
-      \u0441\u043E\u0431\u0430\u043A\u0435"
-    RedQuestionSprite: {fileID: 21300000, guid: e8ae0388cc58c5042a0096a2261f2def, type: 3}
-  - BlueQuestionText: "\u0421\u043F\u0430\u0441\u0442\u0438 \u0436\u0438\u0437\u043D\u044C
-      \u0441\u043E\u0431\u0430\u043A\u0435"
-    BlueQuestionSprite: {fileID: 21300000, guid: e8ae0388cc58c5042a0096a2261f2def, type: 3}
-    RedQuestionText: "\u0421\u043F\u0430\u0441\u0442\u0438 \u0436\u0438\u0437\u043D\u044C
-      \u043A\u043E\u0448\u043A\u0435"
-    RedQuestionSprite: {fileID: 21300000, guid: c58a96c1e06de6e4e87664d0d3e0a623, type: 3}
+  - BlueQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 1"
+    BlueQuestionSpritePath: 1
+    RedQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 2"
+    RedQuestionSpritePath: 1.1
+  - BlueQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 2"
+    BlueQuestionSpritePath: 2
+    RedQuestionText: "\u0412\u043E\u043F\u0440\u043E\u0441 1"
+    RedQuestionSpritePath: 2.1
