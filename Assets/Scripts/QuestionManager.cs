@@ -15,7 +15,7 @@ namespace Managers
 
         public void Initialize()
         {
-            _questionsConfig = Resources.Load<QuestionsConfig>("QuestionsConfig");
+            _questionsConfig = Resources.Load<QuestionsConfig>("Configs/QuestionsConfig");
 
             _questionPool = new List<QuestionModel>();
 

@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Models
 {
@@ -6,8 +7,8 @@ namespace Models
     public class QuestionModel
     {
         public string BlueQuestionText;
-        public string BlueQuestionSpritePath;
+        public Sprite BlueQuestionSprite;
         public string RedQuestionText;
-        public string RedQuestionSpritePath;
+        public Sprite RedQuestionSprite;
     }
 }
