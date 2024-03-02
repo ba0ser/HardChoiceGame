@@ -52,9 +52,13 @@ public class ChoiceWindow : MonoBehaviour
 
     public void ShowChoicePercents()
     {
+        _blueAnswerDescription.gameObject.SetActive(false);
+        _redAnswerDescription.gameObject.SetActive(false);
+
         _blueAnswerChoices.gameObject.SetActive(true);
         _redAnswerChoices.gameObject.SetActive(true);
     }
+
     public void HideChoicePercents()
     {
         _blueAnswerChoices.gameObject.SetActive(false);

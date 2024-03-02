@@ -36,7 +36,10 @@ namespace Managers
             if (_questionPool.Count > 0)
             {
                 var qIndex = Random.Range(0, _questionPool.Count);
-                return QuestionsConfig.GetQuestion(qIndex);
+                var question = _questionPool[qIndex];
+                _questionPool.Remove(question);
+
+                return question;
             }
 
             return null;

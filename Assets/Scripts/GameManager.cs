@@ -46,30 +46,33 @@ public class GameManager : MonoBehaviour
         {
             _choiceWindow.StopTimer();
             _choiceWindow.ShowChoicePercents();
-            SetQuestion();
+            SetNextQuestion();
         }
     }
 
     private void StartGame()
     {
-        SetQuestion();
+        StartNewQuest();
     }
 
-    private void SetQuestion()
+    private void StartNewQuest()
     {
-        StartCoroutine(StartNewQuestion());
-    }
-
-    private IEnumerator StartNewQuestion()
-    {
-        yield return new WaitForSeconds(_questionManager.QuestionsConfig.StartRoundDelay);
-
-        var randomPercent = Random.Range(_questionManager.QuestionsConfig.RandomRangeMin,
-                                         _questionManager.QuestionsConfig.RandomRangeMax);
+        var randomPercent = Random.Range(_questionManager.QuestionsConfig.RandomRangeMin, _questionManager.QuestionsConfig.RandomRangeMax);
 
         _choiceWindow.SetQuestion(_questionManager.GetQuestion(), randomPercent);
 
         _timer = _questionManager.QuestionsConfig.RoundTimer;
         _choiceWindow.StartTimer(_timer);
+    }
+
+    private void SetNextQuestion()
+    {
+        StartCoroutine(StartQuestion());
+    }
+
+    private IEnumerator StartQuestion()
+    {
+        yield return new WaitForSeconds(_questionManager.QuestionsConfig.StartRoundDelay);
+        StartNewQuest();
     }
 }
